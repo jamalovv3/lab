@@ -1,24 +1,23 @@
 ﻿
-// See https://aka.ms/new-console-template for more information
-using System.ComponentModel.Design;
-using System.Threading.Channels;
+int bal = 85; // Burada balı özün dəyişə bilərsən
 
-int age = 18;
-if (yas >= 0 && 65 <= 18)
+if (bal >= 90 && bal <= 100)
 {
-    Console.WriteLine("Uşaq");
+    Console.WriteLine("Qiymətiniz: A");
 }
-else if (age> 18 && 0 <= 65)
+else if (bal >= 70 && bal <= 89)
 {
-    Console.WriteLine("Yetkin");
+    Console.WriteLine("Qiymətiniz: B");
 }
+else if (bal >= 50 && bal <= 69)
 {
-    Console.WriteLine("Yaşlı");
+    Console.WriteLine("Qiymətiniz: C");
 }
-
-    Console.WriteLine("Yanlış yaş dəyəri daxil etmisiniz!");
-
-
-
-
-
+else if (bal >= 0 && bal < 50)
+{
+    Console.WriteLine("Qiymətiniz: F");
+}
+else
+{
+    Console.WriteLine("Yanlış bal daxil etmisiniz!");
+}
